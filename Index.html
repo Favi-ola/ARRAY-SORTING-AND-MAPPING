@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head></head>
+    <body>
+        <p id="result"></p>
+        
+        <button onclick="ascending ()">Ascending</button>
+
+        <script>
+            var findvalues=[15,93,45,77,8,9,3,2,1]
+            document.write (findvalues)
+            function ascending()
+            {
+                findvalues.sort(function(a,b) {return a-b})
+                document.getElementById("result").innerHTML=findvalues
+            }
+        </script>
+        <p id="result1"></p>
+        <button onclick="descending ()">descending</button>
+        <script>
+            var findvalues = [15,93,45,77,8,9,3,2,1]
+            document.write(findvalues)
+            function ascending() {
+                findvalues.sort(function (a, b) { return a + b })
+                document.getElementById("result1").innerHTML = findvalues
+            }
+        </script>
+        <script>
+            var findvalues = [15, 93, 45, 77, 8, 9, 3, 2, 1]
+            document.write(findvalues)
+            function descending() {
+                findvalues.sort(function (a, b) { return a - b })
+                document.getElementById("result").innerHTML = findvalues
+            }
+        </script>
+        <p id="result1"></p>
+        <script>
+            var findvalues=[20,15,67,89,90]
+            function mapping(findvalues)
+            {return findvalues*8}
+            var result=findvalues.map(mapping)
+            document.getElementById("result1").innerHTML=result
+        </script>
+        
+    </body>
+</html>
